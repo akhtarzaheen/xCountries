@@ -13,7 +13,7 @@ function App() {
       let countryData = await data.json();
       setCountry(countryData);
     }).catch((error) => {
-      console.error();
+      console.error("Error fetching data:", error);
     })
   }, []);
 
